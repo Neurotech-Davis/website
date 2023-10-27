@@ -1,0 +1,23 @@
+/* components/navbar.module.css */
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.46);
+}
+
+.nav-button {
+    background-color: #abaeb3;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 500px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-button:hover {
+    background-color: #4c91db;
+  }
+  
