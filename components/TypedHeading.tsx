@@ -12,12 +12,11 @@ const TypedHeading: React.FC = () => {
             })
 
             .pauseFor(3)
-            typewriter.typeString('<span style="color: #FFC436;">@</span>')
+            .typeString('<span style="color: #FFC436;">@</span>')
             .pauseFor(2)
-            typewriter.typeString('<span style="color: #213555;">Davoos</span>')
-            typewriter.deleteChars(6)
-            typewriter.typeString('<span style="color: #213555;">Davis.</span>')
-
+            .typeString('<span style="color: #213555;">Davus</span>')
+            .deleteChars(5)
+            .typeString('<span style="color: #213555;">Davis</span>')
             .callFunction(() => {
                 console.log('All strings were deleted');
             })

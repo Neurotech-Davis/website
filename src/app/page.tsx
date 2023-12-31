@@ -1,52 +1,42 @@
 'use client'
 import React from 'react'
-import styles from '../../styles/homepage.module.css'
+import styles from '../../styles/main.module.css'
 import Layout from '../../components/Layout'
 import MyDrawer from '../../components/Drawer'
 import TypedHeading from '../../components/TypedHeading'
 import { Spacer, Collapse, Text, Card} from '@geist-ui/core'
-import { Bold } from '@geist-ui/icons'
+import { AlignCenter, Bold } from '@geist-ui/icons'
 
 export default function Home() {
   return (
-    <div className={styles['custom-background']}>
-      <Layout>
-      <MyDrawer/>
-      <div>
+    <div>
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }} >
         {
-        /* Add your homepage content here */
-        <p >
+          /* Add your homepage content here */
+          <p >
           <h1>
             <TypedHeading/>
           </h1>
-          <br>
-          </br>
+          <br></br>
 
-          <h2>
-          Discover the limitless potential of your brain - Dive into the world of neurotechnology with us.
-          </h2>
+              <h2 className='styles.center' >
+              Discover the limitless potential of your brain - Dive into the world of neurotechnology with us.
+              </h2>
+
+          <center>
+            <div>
+              <MyDrawer/>
+            </div>
+          </center>
          
-          <br/>
-          <div className={styles['container']}>
-        
-            <h2>
-            What do we do?
-            </h2>
-
-        </div>
-        <div className={styles['container']}>
-            <h2>
-              How do we do it?
-            </h2>
-        </div>
-
         </p>
         }
       </div>
+      <Layout>
+        <div>
+          
+        </div>
       </Layout>
     </div>
-
   )
 }
-
-//className={styles['custom-background']}
